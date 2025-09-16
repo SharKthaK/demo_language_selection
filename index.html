@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Indian Language - AI Crop Disease Detection</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/language.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- Language Selection Container -->
+    <div class="language-container">
+        <div class="language-content">
+            <!-- Header Section -->
+            <div class="language-header">
+                <div class="globe-animation">
+                    <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="60" cy="60" r="50" stroke="var(--green-main)" stroke-width="2" opacity="0.3"/>
+                        <circle cx="60" cy="60" r="40" stroke="var(--green-main)" stroke-width="2" opacity="0.5"/>
+                        <circle cx="60" cy="60" r="30" stroke="var(--green-main)" stroke-width="2" opacity="0.7"/>
+                        <path d="M20 60H100M60 20V100" stroke="var(--green-main)" stroke-width="2"/>
+                        <path d="M35 35C45 45 75 45 85 35M35 85C45 75 75 75 85 85" stroke="var(--green-main)" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="60" cy="60" r="3" fill="var(--green-main)"/>
+                    </svg>
+                </div>
+                <h1 data-i18n="selectLanguage">Select Your Language</h1>
+                <p data-i18n="languageDescription">Choose your preferred Indian language to continue with CropGuard AI</p>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="language-search">
+                <div class="search-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
+                        <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <input type="text" id="languageSearch" placeholder="Search languages..." data-i18n-placeholder="searchLanguages">
+                </div>
+            </div>
+
+            <!-- Popular Languages -->
+            <div class="popular-languages">
+                <h3 data-i18n="popularLanguages">Popular Indian Languages</h3>
+                <div class="popular-grid">
+                    <div class="language-card popular" data-lang="hi" data-name="Hindi">
+                        <div class="flag">🇮🇳</div>
+                        <div class="language-info">
+                            <h4>हिन्दी</h4>
+                            <span>Hindi</span>
+                            <small>600M+ speakers</small>
+                        </div>
+                        <div class="selection-indicator">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="language-card popular" data-lang="en" data-name="English">
+                        <div class="flag">🇮🇳</div>
+                        <div class="language-info">
+                            <h4>English</h4>
+                            <span>English</span>
+                            <small>130M+ speakers</small>
+                        </div>
+                        <div class="selection-indicator">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="language-card popular" data-lang="bn" data-name="Bengali">
+                        <div class="flag">🇮🇳</div>
+                        <div class="language-info">
+                            <h4>বাংলা</h4>
+                            <span>Bengali</span>
+                            <small>97M+ speakers</small>
+                        </div>
+                        <div class="selection-indicator">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="language-card popular" data-lang="te" data-name="Telugu">
+                        <div class="flag">🇮🇳</div>
+                        <div class="language-info">
+                            <h4>తెలుగు</h4>
+                            <span>Telugu</span>
+                            <small>75M+ speakers</small>
+                        </div>
+                        <div class="selection-indicator">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="language-card popular" data-lang="mr" data-name="Marathi">
+                        <div class="flag">🇮🇳</div>
+                        <div class="language-info">
+                            <h4>मराठी</h4>
+                            <span>Marathi</span>
+                            <small>72M+ speakers</small>
+                        </div>
+                        <div class="selection-indicator">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="language-card popular" data-lang="ta" data-name="Tamil">
+                        <div class="flag">🇮🇳</div>
+                        <div class="language-info">
+                            <h4>தமிழ்</h4>
+                            <span>Tamil</span>
+                            <small>68M+ speakers</small>
+                        </div>
+                        <div class="selection-indicator">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- All Languages -->
+            <div class="all-languages">
+                <h3 data-i18n="allLanguages">Other Indian Languages</h3>
+                <div class="languages-grid" id="languagesGrid">
+                    <!-- Languages will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Continue Button -->
+            <div class="continue-section">
+                <button id="continueBtn" class="btn btn-primary btn-large" disabled>
+                    <span data-i18n="continue">Continue</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <p class="language-note">
+                    <span data-i18n="languageNote">You can change your language preference anytime in settings</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Language Preview Sidebar -->
+        <div class="language-preview" id="languagePreview">
+            <div class="preview-header">
+                <h4 data-i18n="preview">Preview</h4>
+                <button class="close-preview" onclick="closePreview()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="preview-content">
+                <div class="preview-language-info">
+                    <div class="preview-flag"></div>
+                    <div class="preview-name">
+                        <h5 id="previewLanguageName">English</h5>
+                        <span id="previewLanguageNative">English</span>
+                    </div>
+                </div>
+                
+                <div class="preview-samples">
+                    <h6 data-i18n="sampleText">Sample Text</h6>
+                    <div class="sample-item">
+                        <label>Welcome:</label>
+                        <span id="sampleWelcome">Welcome to CropGuard AI</span>
+                    </div>
+                    <div class="sample-item">
+                        <label>Features:</label>
+                        <span id="sampleFeatures">AI-powered crop disease detection</span>
+                    </div>
+                    <div class="sample-item">
+                        <label>Dashboard:</label>
+                        <span id="sampleDashboard">Your farming dashboard</span>
+                    </div>
+                </div>
+                
+                <div class="preview-actions">
+                    <button class="btn btn-primary btn-small" onclick="selectPreviewLanguage()">
+                        <span data-i18n="selectThis">Select This Language</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Language Confirmation Modal -->
+    <div class="modal-overlay" id="confirmationModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h4 data-i18n="confirmLanguage">Confirm Language Selection</h4>
+            </div>
+            <div class="modal-content">
+                <div class="confirmation-language">
+                    <div class="confirmation-flag"></div>
+                    <div class="confirmation-info">
+                        <h5 id="confirmationLanguageName">English</h5>
+                        <span id="confirmationLanguageNative">English</span>
+                    </div>
+                </div>
+                <p data-i18n="confirmMessage">Are you sure you want to set this as your preferred language?</p>
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-secondary" onclick="closeConfirmation()">
+                    <span data-i18n="cancel">Cancel</span>
+                </button>
+                <button class="btn btn-primary" onclick="confirmLanguageSelection()">
+                    <span data-i18n="confirm">Confirm</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/app.js"></script>
+    <script src="/js/language.js"></script>
+</body>
+</html>
